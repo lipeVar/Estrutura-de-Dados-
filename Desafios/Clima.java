@@ -2,7 +2,7 @@ public class Clima {
     String ano; //2024, 2025, 2026
     String mes; //Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro
     String temperatura; //Frio (até 15°C), Quente (acima de 25°C), Ameno (16°C a 25°C)
-    int precipitacao; //nada, pouca (até 20mm), média (21mm a 40mm), muita (mais de 40mm)
+    String precipitacao; //nada, pouca (até 20mm), média (21mm a 40mm), muita (mais de 40mm)
     
     public Clima(String ano, String mes, String temperatura, String precipitacao) {
         this.ano = ano;

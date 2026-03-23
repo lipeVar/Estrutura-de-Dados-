@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class principal {
+public class Main {
     //Estação
     public static String getEstacao(String mes) {
         switch (mes) {
@@ -45,7 +45,7 @@ public class principal {
             case "Quente": return 3;
         
             default:
-                break;
+                return 0;
         }
     }
 
@@ -56,7 +56,7 @@ public class principal {
         //Leitura de arquivo
         String linha;
         try {
-            BufferedReader br = new BufferedReader(new FileReader("dadosClimaticos.csv"));
+            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\lfvar\\OneDrive\\Documentos\\GitHub\\Estrutura-de-Dados\\Desafios\\dadosClimaticos.csv"));
 
             while ((linha = br.readLine()) != null) {
                 String[] p = linha.split(",");
@@ -65,7 +65,7 @@ public class principal {
             }
         br.close();
         } catch(Exception e) {
-            System.out.println("Erro!!", e.getMessage());
+            System.out.println("Erroooo!!" + e.getMessage());
         }
         //Contadores
         int chuvaVe = 0, chuvaOu = 0, chuvaIn = 0;
