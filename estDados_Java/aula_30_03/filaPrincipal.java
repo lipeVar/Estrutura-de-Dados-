@@ -7,14 +7,14 @@ import java.util.Scanner;
 public class filaPrincipal {
     public class Sistemafilas {
 
-        static Queue<String> filaNormal = new LinkedList<>();
-        static Queue<String> filaPrioritaria = new LinkedList<>();
+        Queue<String> filaNormal = new LinkedList<>();
+        Queue<String> filaPrioritaria = new LinkedList<>();
 
-        static int contatorChamados = 0;
-        static int contadorNormal = 1;
-        static int contadorPrioritario = 51;
+        int contatorChamados = 0;
+        int contadorNormal = 1;
+        int contadorPrioritario = 51;
 
-        public static void main(String[] args) {
+        public void main(String[] args) {
             
             Scanner scanner = new Scanner(System.in);
             int opcao;
