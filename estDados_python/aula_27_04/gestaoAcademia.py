@@ -132,4 +132,8 @@ def menu():
             print("Opção inválida!")
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     menu()
+=======
+    menu()
+>>>>>>> e911fbee97f40621d5b120a167bf5dfc862bc5b5
